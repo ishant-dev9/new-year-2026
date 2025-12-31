@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year 🎉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SCREEN 1 -->
+        <section class="screen active">
+            <h1>🎉 Happy New Year 2026!</h1>
+            <p>Something special is waiting for you ✨</p>
+            <button onclick="nextScreen()">Let’s Go 🚀</button>
+        </section>
+
+        <!-- SCREEN 2 -->
+        <section class="screen">
+            <h2>🚀 Launch the New Year</h2>
+            <div class="rocket-box">
+                <img src="assets/rocket.png" id="rocket">
+            </div>
+            <button onclick="launchRocket()">Launch 🚀</button>
+        </section>
+
+        <!-- SCREEN 3 -->
+        <section class="screen">
+            <h2>🎶 New Year Vibes</h2>
+            <p>Tap play and feel the moment</p>
+
+            <audio id="song" src="assets/song.mp3"></audio>
+
+            <button onclick="playMusic()">▶ Play Music</button>
+            <button onclick="nextScreen()">Continue ✨</button>
+        </section>
+
+        <!-- SCREEN 4 -->
+        <section class="screen">
+            <h1>✨ Make a Wish ✨</h1>
+            <p>May 2026 bring joy, peace & success</p>
+            <button onclick="celebrate()">🎉 Celebrate</button>
+        </section>
+
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+
+
+    <script src="script.js"></script>
+
+    <!-- CELEBRATION TEXT -->
+    <div id="celebrationText">🎉 Happy New Year 2026 🎉</div>
+    <div id="countdown"></div>
+
+    <!-- SNOWFALL (BACKGROUND) -->
+    <canvas id="snowCanvas"></canvas>
+
+
+
+
+    <!-- FIREWORKS (BACKGROUND) -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- CONFETTI (FOREGROUND) -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</body>
+
+</html>
